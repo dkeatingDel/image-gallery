@@ -8,8 +8,15 @@
 </head>
 <body>
   <main>
-    <h1>My Image Gallery</h1>
-    <p>Enter 5 image URLs below and click <strong>Show Images</strong>.</p>
+    <div class="site-brand">
+      <img class="brand-logo" src="logo.svg" alt="Gallery logo" />
+      <div>
+        <h1>My Image Gallery</h1>
+        <p class="brand-subtitle">Drag URLs in or paste them into the fields below to preview your gallery.</p>
+      </div>
+    </div>
+
+    <p>Enter up to 5 image URLs below and click <strong>Show Images</strong>.</p>
 
     <form id="image-form">
       <div class="input-grid">
@@ -38,7 +45,18 @@
       <button type="submit">Show Images</button>
     </form>
 
-    <section id="gallery" class="gallery"></section>
+    <div id="drop-zone" class="drop-zone">
+      Drag and drop image URLs here to auto-fill the form.
+    </div>
+
+    <div class="gallery-header">
+      <h2>Gallery Preview</h2>
+      <p id="gallery-info">No images added yet.</p>
+    </div>
+
+    <section id="gallery" class="gallery">
+      <p class="gallery-placeholder">Your images will appear here after you click Show Images.</p>
+    </section>
   </main>
 
   <script src="script.js"></script>
