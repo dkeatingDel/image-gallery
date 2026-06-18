@@ -1,0 +1,11 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor directories and files
+.vscode/
+.idea/
+*.swp
+
+# No build artifacts for static site
+node_modules/
